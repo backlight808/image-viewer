@@ -1,0 +1,37 @@
+$primary-color: #43a0b2;
+.carousal{
+    &__strip{
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        margin-bottom: 2em;
+        margin: 0px -26px;
+    }
+    &__thumb{
+        display: block;
+        flex: 1;
+        margin: 0 10px;
+        width: 100px;
+        height: auto; 
+        img{
+            max-width: 100%;
+            cursor: pointer;
+            height: fit-content;
+            border: 1px dotted rgb(107, 107, 107);
+        }
+        &--selected {
+            img {
+                border: 2px solid $primary-color; /* Example border for selected image */
+             } 
+        }
+    }
+    &__btn{
+        display: flex;
+        cursor: pointer;
+        color: $primary-color;
+        align-items: center;
+        &.left{
+            transform: scalex(-1);
+        }
+    }
+}
