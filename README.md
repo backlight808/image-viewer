@@ -19,19 +19,33 @@ this application also extends a carousal section that lets the user switch throu
 
 ## About
 
-Provide a brief overview of the application, its purpose, and any key features.
+- This is an application to view and do some basic transformations in the image this application also extends a carousal section that lets the user switch through some additional image
 
 ## Features
 
-- List out the main features and functionalities of the application.
+ **Zoom In** (Zoom +)
+ **Zoom Out** (Zoom -)
+ **Show/Hide Grid-lines**
+ **Rotate 90 Degrees Anti-clockwise**
+ **Rotate 1 Degree Anti-clockwise**
+ **Rotate 1 Degree Clockwise**
+ **Rotate 90 Degrees Clockwise**
+ **Flip Horizontal**
+ **Flip Vertical**
+ **Reset Image**
 
 ## Getting Started
 
-Instructions on setting up the development environment and running the application locally.
+# Technical Requirements
+1. **Framework**:  Angular version 18 or greter is prefferd
+2. **Icons**: Material icons, themes,  Google fonts  
+3. **Modular Design**:  
+4. **Version Control**: git.
+5. **Deployment Instructions**: Follow the Readme.
 
 ### Prerequisites
 
-- List any software dependencies required to run the application (e.g., Node.js, Angular CLI).
+- Angular CLI. VS Code or any editor
 
 ### Installation
 
@@ -60,7 +74,7 @@ ng serve
 
 ## Usage
 
- run the application on the local host, it will load an image viewer, user can perform actions on the buttons provided in the application.
+ Run the application on the local host, it will load an image viewer, user can perform actions on the buttons provided in the application.
 
 ## Folder Structure
 
@@ -69,7 +83,7 @@ app -> components
 
 ## Contributing
 
- contribute to the project. clone the repo, create a new branch use naming comnventions, contribute and create pull request.
+ Contribute to the project. clone the repo, create a new branch use naming comnventions, contribute and create pull request.
 
 Additional Possible Enhancements not mentioned as part of the requirement:
 
