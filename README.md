@@ -42,7 +42,7 @@ Instructions on setting up the development environment and running the applicati
 
 2. Navigate into the project directory:
    ```bash
-   cd smile-view
+   cd image-viewer
    ```
 
 3. Install dependencies:
@@ -60,18 +60,31 @@ ng serve
 
 ## Usage
 
- additional usage  
+ run the application on the local host, it will load an image viewer, user can perform actions on the buttons provided in the application.
 
 ## Folder Structure
 
- the folder structure 
+src -> app, assets, 
+app -> components
 
 ## Contributing
 
- contribute to the project.   guidelines for pull requests and code formatting.
+ contribute to the project. clone the repo, create a new branch use naming comnventions, contribute and create pull request.
+
+Additional Possible Enhancements not mentioned as part of the requirement:
+
+- Panning of the Image when zooming in/out
+- Responsiveness
+- Hide/Show carousal section
+- upload images to the asset folder
+- images can be loaded using a service that fetch images using http get.
+
+
 
 ## License
 
-Specify the license under which the project is distributed.
+ license : this Application is developed as an assinment.
+ Happy Coding !!!
 
 --- 
+
