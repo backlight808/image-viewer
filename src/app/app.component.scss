@@ -1,0 +1,109 @@
+$body-bg : #525659;
+$container-color: #f1f1f1;
+$img-border: #ccc;
+$white: #fff;
+$shadow-color: #5f5f5f;
+$primary-color: #43a0b2;
+::ng-deep {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100dvh;
+        background-color: $body-bg;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.container {
+    max-width: 768px;
+    padding: 32px;
+    background-color: $container-color;
+    margin: 0 auto;
+    &__no-child{
+        padding: 8px 36px;
+    }
+}
+
+.image {
+    &__holder {
+        height: auto;
+        max-height: 430px;
+        min-height: 430px;
+        overflow: hidden; 
+        position: relative;
+        margin: 0px -26px;
+        display: flex; 
+        img {
+            display: block;
+            max-width: 100%; 
+            height: auto;
+            object-fit: cover;
+            user-select: none; 
+            border: 1px solid $img-border; 
+        }
+    }
+
+    &__view {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__controls {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        padding: 24px 0; 
+        span {
+            background-color: $white;
+            box-shadow: 1px 2px 5px $shadow-color;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 8px;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.grid{
+    &__lines{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0;
+    }
+    &__line{
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    } 
+} 
+.rotate-r-90 {
+    transform: scaleY(-1) rotate(-190deg)
+} 
+.flip-v {
+    transform: rotate(-90deg);
+}
+.navigation-btn {
+    display: flex;
+    color: $primary-color;
+    align-items: center; 
+    &.left {
+        transform: scalex(-1);
+    } 
+    .mat-icon {
+        cursor: pointer;
+    }
+}

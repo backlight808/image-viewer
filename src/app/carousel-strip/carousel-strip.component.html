@@ -1,0 +1,9 @@
+<div class="carousal__strip">
+  <div (click)="navigate('prev')" class="carousal__btn left"><mat-icon
+      matTooltip="Previous Image">play_arrow</mat-icon></div>
+  <div class="carousal__thumb" *ngFor="let image of images; let i = index" [ngClass]="{'carousal__thumb--selected': i === selectedImageIndex}">
+    <img [src]="'assets/' + image" (click)="selectImage(i)"
+      [matTooltip]="'Image ' + (i + 1) + ' out of ' + images.length">
+  </div>
+  <div (click)="navigate('next')" class="carousal__btn"><mat-icon matTooltip="Next Image">play_arrow</mat-icon></div>
+</div>

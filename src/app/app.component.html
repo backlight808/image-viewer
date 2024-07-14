@@ -1,0 +1,35 @@
+<main class="main">
+  <div class="content">
+    <div class="container" [ngClass]="{'container__no-child': !childComponentLoaded}">
+      <div class="image__holder">
+        <div class="navigation-btn left" *ngIf="childComponentLoaded"><mat-icon matTooltip="Previous Image"
+            (click)="navigate('prev')">play_arrow</mat-icon></div>
+        <div class="image__view">
+          <img #imageElement [src]="currentImage" alt="Image">
+          <div class="grid__lines" *ngIf="gridVisible">
+            <div class="grid__line" *ngFor="let line of gridLines"></div>
+          </div>
+        </div>
+        <div class="navigation-btn" *ngIf="childComponentLoaded"><mat-icon matTooltip="Next Image" (click)="navigate('next')">play_arrow</mat-icon>
+        </div>
+      </div>
+      <div class="image__controls">
+        <span (click)="applyTransform(0.2, 0)" matTooltip="Zoom in"
+          aria-label="Zoom the image"><mat-icon>zoom_in</mat-icon></span>
+        <span (click)="applyTransform(-0.2, 0)" matTooltip="Zoom out"><mat-icon>zoom_out</mat-icon></span>
+        <span (click)="showGrid()" matTooltip="Show Grid"><mat-icon>grid_on</mat-icon></span>
+        <span (click)="applyTransform(0,-90)" matTooltip="Rotate Left"><mat-icon>rotate_left</mat-icon></span>
+        <span (click)="applyTransform(0, 90)" matTooltip="Rotate Right"><mat-icon>rotate_right</mat-icon></span>
+        <span (click)="applyTransform(0, -1)"
+          matTooltip="Rotate Left 1 Degree"><mat-icon>rotate_90_degrees_ccw</mat-icon></span>
+        <span (click)="applyTransform(0, 1)" matTooltip="Rotate Right 1 Degree"><mat-icon
+            class="rotate-r-90">rotate_90_degrees_ccw</mat-icon></span>
+        <span (click)="applyTransform(0,0,'x');" matTooltip="Flip Horizontal"><mat-icon>flip</mat-icon></span>
+        <span (click)="applyTransform(0,0,'y');" matTooltip="Flip Vertical"><mat-icon class="flip-v">flip</mat-icon></span>
+        <span (click)="reset()" matTooltip="Reset"><mat-icon>refresh</mat-icon></span>
+      </div>
+      <app-carousel-strip (imageSelected)="updateCurrentImage($event)" [images]="images"
+        (imageSelected)="setCurrentImage($event)"></app-carousel-strip>
+    </div>
+  </div>
+</main>
