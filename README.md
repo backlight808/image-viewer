@@ -4,7 +4,7 @@
 This is an application to view and do some basic transformations in the image
 this application also extends a carousal section that lets the user switch through some additional image
 
-![App UI](https://github.com/backlight808/image-viewer/blob/main/app.png?raw=true)
+![App UI](https://github.com/backlight808/image-viewer/blob/main/src/app.png)
 
 
 ## Table of Contents
