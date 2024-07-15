@@ -4,6 +4,9 @@
 This is an application to view and do some basic transformations in the image
 this application also extends a carousal section that lets the user switch through some additional image
 
+![App UI](https://github.com/backlight808/image-viewer/blob/main/app.png?raw=true)
+
+
 ## Table of Contents
 
 1. [About](#about)
@@ -97,7 +100,7 @@ Additional Possible Enhancements not mentioned as part of the requirement:
 
 ## License
 
- license : this Application is developed as an assinment.
+ license : this Application is developed as an assignment.
  Happy Coding !!!
 
 --- 
